@@ -1,0 +1,254 @@
+body {
+	background: url("../img-porta/pluma.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+/*ESTA ES LA TRANSPARENCIA*/
+.fondo-blanco {
+	background-color: rgba(255,255,255,0.4);
+	width: 90%;
+	margin-left: 60px;
+	margin-top: 60px;
+	margin-right: 0px;
+
+}
+
+/* cambie la posicion del botón menu porque se encuentra abajo y yo
+lo quise arriba */
+.btn_menu {
+	position: relative;
+	margin-top: -1100px;
+}
+
+/*cambie la posición de los botones internos */
+.btn-floating {
+	margin-bottom: 40px;
+	z-index: 1;
+	line-height: 50px;
+}
+
+
+/* estos son los titulos que van al inicio de cada sección */
+.titulares {
+	font-family: 'Pacifico', cursive;
+	font-size: 6rem;
+	color: #00695c;
+	margin-top: 0px;
+}
+ /* estos los subtitulos */
+.subti {
+	font-size: 3rem;
+	font-family: 'Righteous', cursive;
+	color: rgb(111, 100, 114);
+	margin-top: -70px;
+}
+
+
+/*este será el carrusel, no funciona mi jquery o materialize por eso lo hice en css*/
+.slid {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slid ul {
+	padding: 0;
+	display: flex;
+	width: 400%;
+	animation: cambio 20s infinite alternate;
+	animation-timing-function: ease-in-out;
+}
+
+.slid li {
+	list-style: none;
+	width: 100%;
+}
+
+.slid img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% { margin-left: 0;}
+	20% { margin-left: 0;}
+	
+	25% { margin-left: -100%;}
+	45% { margin-left: -100%;}
+
+	50% { margin-left: -200%;}
+	70% { margin-left: -200%;}
+
+	75% { margin-left: -300%;}
+	100% { margin-left: -300%;}
+}
+ 	/* aqui termina carrusel */
+
+	
+	/* este es efecto hover en el carrusel */
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 60%;
+  height: 60%;
+  left: 20%;
+  top: 20%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  	-webkit-transform: scale(0,1);
+  	-ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  	-webkit-transform: scale(1);
+  	-ms-transform: scale(1);
+  	transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  	-webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: brightness(0.6);
+  	-webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  	-webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  	-webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  	-webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.top {
+	margin-top: 100px;
+}
+
+ 	/* hasta aquí termina el hover del  carrusel */
+
+
+
+
+		/* TAMAÑO DE CIRCULOS EN GUSTOS */
+
+.tamaño-gustos {
+	width: 220px;
+	height: 220px;
+	border-radius: 100%;
+	margin-left: 150px;
+}
+
+#conciertos {
+	background-image: url("../gustos/conciertos.jpg");
+}
+
+#conocer {
+	background-image: url("../gustos/conocer.jpg");
+}
+
+#foto {
+	background-image: url("../gustos/fotografia.jpg");
+}
+
+#surf {
+	background-image: url("../gustos/surf.jpg");
+}
+
+
+.cv {
+	width: 300px;
+	height: 400px;
+}
+
+.linea-rosa {
+	border: 3px #ff00ce;
+	padding: 2px;
+
+}
+
+						/*///* MARGENES Y MÁS //////*/
+
+#tit-proyecto {
+	margin-left: 350px;
+}
+
+#tit-algo {
+	margin-left: 470px;
+}
+
+#tit-CV {
+	margin-left: 330px;
+}
+
+			
+			/* NO REPEAT PARA IMAGENES */
+.no-repeat {				
+	background-repeat: no-repeat;
+}
+
+.te-center {
+	text-align: center;
+}
+
+.mar-top100 {
+	margin-top: 100px;
+}
+
+.mar-top50 {
+	margin-top: 50px;
+}
+
+
+
+			/* MEDIA QUERIES */
+
+@media (max-width: 991px){
+
+}
