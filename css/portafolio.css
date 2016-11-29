@@ -35,7 +35,7 @@ lo quise arriba */
 	font-family: 'Pacifico', cursive;
 	font-size: 6rem;
 	color: #00695c;
-	margin-top: 0px;
+	margin-top: 50px;
 }
  /* estos los subtitulos */
 .subti {
@@ -149,7 +149,7 @@ lo quise arriba */
   transform: translate3d(0,-100%,0);
 }
 
-.hovereffect a, hovereffect p {
+.hovereffect a, .hovereffect p {
   color: #FFF;
   padding: 1em 0;
   opacity: 0;
@@ -170,36 +170,69 @@ lo quise arriba */
 .top {
 	margin-top: 100px;
 }
-
  	/* hasta aquí termina el hover del  carrusel */
 
-
-
-
-		/* TAMAÑO DE CIRCULOS EN GUSTOS */
-
-.tamaño-gustos {
-	width: 220px;
-	height: 220px;
-	border-radius: 100%;
-	margin-left: 150px;
+/* este es el hover de las fotos de gustos */
+.hovereffect {
+  width: 100%;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
 }
 
-#conciertos {
-	background-image: url("../gustos/conciertos.jpg");
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 	0;
+  left: 0;
+  background-color: rgba(75,75,75,0.7);
+  	-webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
 }
 
-#conocer {
-	background-image: url("../gustos/conocer.jpg");
+.hovereffect:hover .overlay {
+  background-color: rgba(48, 152, 157, 0.4);
 }
 
-#foto {
-	background-image: url("../gustos/fotografia.jpg");
+.hovereffect img {
+  display: block;
+  position: relative;
 }
 
-#surf {
-	background-image: url("../gustos/surf.jpg");
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  	-webkit-transform: translateY(45px);
+  	-ms-transform: translateY(45px);
+  transform: translateY(45px);
+  	-webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
 }
+
+.hovereffect:hover h2 {
+  	-webkit-transform: translateY(5px);
+  	-ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.p {
+	font-size: 20px;
+	color: #fff;
+	margin-top: 50px;
+}
+ 	/* hasta aquí termina el hover de fotos */
+
+
 
 
 .cv {
@@ -207,10 +240,11 @@ lo quise arriba */
 	height: 400px;
 }
 
-.linea-rosa {
-	border: 3px #ff00ce;
-	padding: 2px;
-
+.:hover
+{
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
 }
 
 						/*///* MARGENES Y MÁS //////*/
@@ -223,9 +257,6 @@ lo quise arriba */
 	margin-left: 470px;
 }
 
-#tit-CV {
-	margin-left: 330px;
-}
 
 			
 			/* NO REPEAT PARA IMAGENES */
