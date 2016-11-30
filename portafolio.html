@@ -14,12 +14,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--<script type="text/javascript" src="js/script.js"></script>-->
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<header>
 		<!-- este es botón que será el menú-->
-		<div class="fixed-action-btn vertical">
+		<div class="fixed-action-btn">
 			<a class="btn_menu btn-floating btn-large #ff4081 pink accent-2">
 			    <i class="large material-icons">add</i>
 			</a>
@@ -34,13 +34,13 @@
 	</header>
 	<div class="fondo-blanco"> <!-- este es el div de transparencia que encerrará a todos los contenidos -->
 		<div class="row"> <!-- empieza titulo de sección -->
-			<div class="col s12">
+			<div class="col s12 m12 l12">
 				<p class="titulares center">Mis Proyectos</p>
 				<p class="subti center"> PORTAFOLIO</p>
 			</div>
 		</div>
 		<section id="misproyectos"> <!-- este es carrusel de los proyectos-->
-			<div class="col s12">
+			<div class="col s12 m12 l12">
 				<div class="slid">
 					<ul>
 						<div class="hovereffect"> <!--proyecto comunidad sostenible-->
@@ -88,34 +88,34 @@
       		</div>
 		</section>
 		<div class="row"> <!-- estos son los titulares de la segunda sección-->
-			<div class="col s12"> 
+			<div class="col s12 m12 l12"> 
 				<p class="titulares center">Algo de</p>
 				<p class="subti center"> LO QUE ME GUSTA</p>
 			</div>
 		</div>
 		<section id="gustos"> <!-- aquí van las fotos de lo que me gusta -->
 			<div class="row">
-				<div class="col s4 ">
+				<div class="col s4 m4">
 					<div class="dtl25">
-						<img src="gustos/foto.jpg" class="imgg responsive-img" width="100%">
+						<img src="gustos/foto.jpg" class="imgg responsive-img" >
 						<div class="dtl">
            					<h2 class="h2">Fotografía</h2>
            					<p class="p">Capturar los mejores momentos</p>
         				</div>
 					</div>		
 				</div>
-				<div class="col s4">
+				<div class="col s4 m4">
 					<div class="dtl25">
-					 	<img src="gustos/dis.jpg" class="imgg responsive-img" width="100%">
+					 	<img src="gustos/dis.jpg" class="imgg responsive-img" >
 						<div class="dtl">
            					<h2 class="h2">Diseño</h2>
            					<p class="p">Diseño gráfico, de interiores y web</p>
         				</div>
 					 </div>
 				</div>
-				<div class="col s4 ">
+				<div class="col s4 m4">
 					<div class="dtl25">
-						<img src="gustos/espacios.jpg" class="imgg responsive-img" width="100%">
+						<img src="gustos/espacios.jpg" class="imgg responsive-img">
 						<div class="dtl">
            					<h2 class="h2">Cultura</h2>
            					<p class="p">Asistir a espacios culturales</p>
@@ -124,27 +124,27 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col s4">
+				<div class="col s4 m4">
 					<div class="dtl25">
-						<img src="gustos/conocer.jpg" class="imgg responsive-img" width="100%">
+						<img src="gustos/conocer.jpg" class="imgg responsive-img">
 						<div class="dtl">
            					<h2 class="h2">Viajar</h2>
            					<p class="p">Conocer diferentes lugares <br>de nuestro país</p>
         				</div>
 					</div>	
 				</div>
-				<div class="col s4">
+				<div class="col s4 m4">
 					<div class="dtl25">
-						<img src="gustos/ilus.jpg" class="imgg responsive-img"  width="100%">
+						<img src="gustos/ilus.jpg" class="imgg responsive-img">
 						<div class="dtl">
            					<h2 class="h2">Ilustración</h2>
            					<p class="p">Mezclar los diferentes tipos y <br> técnicas de ilustración</p>
         				</div>
         			</div>
 				</div>	
-				<div class="col s4">
+				<div class="col s4 m4">
 					<div class="dtl25">
-						<img src="gustos/conciertos.jpg" class="imgg responsive-img"  width="100%">
+						<img src="gustos/conciertos.jpg" class="imgg responsive-img">
 						<div class="dtl">
            					<h2 class="h2">Conciertos</h2>
            					<p class="p">Asistir a conciertos en vivo</p>
@@ -154,12 +154,12 @@
 			</div>
 		</section>
 		<div class="row">
-			<div class="col s12"> 
+			<div class="col s12 m12"> 
 				<p class="titulares center mar-top100" >Descarga mi CV</p>
 			</div>
 			<section id="cv">
 				<div class="row">
-					<div class="col s12">
+					<div class="col s12 m12">
 						<ul class="demo-2 effect">
 							<li>
 								<h2 class="zero center">Descarga <br> Aquí</h2>
@@ -180,24 +180,30 @@
 		</div>
 		<section id="contacto"> <!-- esta seccion es del contacto, no se han linkeado bien el face ni correo-->
 			<div class="row">
-				<div class="col s3">
-					<a href="https://github.com/MontserratGonzalez1" target="blank"><img src="img-porta/iconos/github.png" class="icon"></a>
+				<div class="col s3 m3">
+					<a href="https://github.com/MontserratGonzalez1" target="blank"><img src="img-porta/iconos/github.png" class="icon animated infinite pulse"></a>
 				</div>
-				<div class="col s2">
-					<a href="x"><img src="img-porta/iconos/gmail.png" class=""></a>
+				<div class="col s2 m2">
+					<a href="x"><img src="img-porta/iconos/gmail.png" class="icon3 animated infinite pulse"></a>
 				</div>
-				<div class="col s2">
-					<a href="https://www.linkedin.com/" target="blank"><img src="img-porta/iconos/linkedin.png" class=""></a>
+				<div class="col s2 m2">
+					<a href="https://www.linkedin.com/" target="blank"><img src="img-porta/iconos/linkedin.png" class="icon3 animated infinite pulse"></a>
 				</div>
-				<div class="col s2">
-					<a href="https://es.pinterest.com/monkygs/" target="blank"><img src="img-porta/iconos/pinterest.png" class=""></a>
+				<div class="col s2 m2">
+					<a href="https://es.pinterest.com/monkygs/" target="blank"><img src="img-porta/iconos/pinterest.png" class="icon3 animated infinite pulse"></a>
 				</div>
-				<div class="col s3">
-					<a href="https://www.facebook.com/monkykags" target="blank"><img src="img-porta/iconos/facebook.png" class="icon2"></a>
+				<div class="col s3 m3">
+					<a href="https://www.facebook.com/monkykags" target="blank"><img src="img-porta/iconos/facebook.png" class="icon2 animated infinite pulse"></a>
 				</div>
 			</div>	
 		</section>
 	</div> <!--ESTE ES EL FONDO BLANCO TRANSPARNTE-->
+	<footer>
+		<div class="container">
+		<p>Diseño: Montserrat González <br>
+		Laboratoria México</p>
+		</div>
+	</footer>
 	
 
 	<script type="text/javascript" src="js/jquery.js"></script>

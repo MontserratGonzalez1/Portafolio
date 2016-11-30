@@ -84,6 +84,8 @@
 }
     /* hasta aquí termina el hover del  carrusel */
 
+
+    /* este es el hover de las fotos */
 .dtl25 {
     width: 100%;
     height: 300px;
@@ -93,7 +95,7 @@
         -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
-.dtl25> .imgg {
+.dtl25 .imgg {
     position: relative;
     width: 100%;
     top: 0;
@@ -148,7 +150,8 @@
 
     /* hasta aquí termina el hover de fotos */
 
-    
+
+
     /* efecto hover del CV */
 
 .demo-2 {
@@ -170,7 +173,7 @@
     font-size:35px;
     line-height:24px;
     margin:0;
-    font-family:'Roboto'
+    font-family: 'Pacifico', cursive;
 }
 
 .effect img {

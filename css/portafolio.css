@@ -3,6 +3,9 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
+	height: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /*ESTA ES LA TRANSPARENCIA*/
@@ -108,15 +111,77 @@ lo quise arriba */
 	margin-left: 90px;
 	margin-bottom: 60px;
 }
+
 .icon2 {
 	margin-right: 40px;
 	margin-bottom: 60px;
 }
 
+footer {
+	background-color: rgb(111, 100, 114);
+	padding: 40px 30px;
+	margin-top: -30px;
+	color: #1de9b6;
+	font-size: 1.1rem;
+	font-family: 'Righteous', cursive;
+	text-align: right;
+}
 
 
 			/* MEDIA QUERIES */
 
-@media (max-width: 991px){
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col l12"] {
+        width: 100%;
+    }
+	
+	body {
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .titulares {
+    	font-size: 3.2rem;
+    	margin-bottom: 0px;
+    }
+	
+	.fondo-blanco {
+		width: 90%;
+		margin-left: 30px;
+		margin-right: 0px;
+	}
+
+	.subti {
+		font-size: 1.5rem;
+		margin-top: 10px;
+	}
+	
+	.dtl25 {
+		height: 100%;
+		width: 100%;
+	}
+
+	.dtl25 .dtl {
+		height: 100%;
+	}
+	
+	.h2 {
+		font-size: 2rem;
+	}
+
+	.demo-2 {
+		display: none;
+	}
+
+	.icon, .icon2, .icon3{
+		position: relative;
+		margin-left: 0px;
+		height: 90px;
+	}
+
+	footer {
+		width: 100%;
+	}
 
 }
