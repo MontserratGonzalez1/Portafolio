@@ -51,8 +51,6 @@
   text-align: center;
   position: relative;
   background-color: transparent;
-  color: #FFF;
-  padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -62,8 +60,6 @@
 }
 
 .hovereffect a, .hovereffect p {
-  color: #FFF;
-  padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -72,11 +68,29 @@
   transform: translate3d(0,100%,0);
 }
 
+.hovereffect a {
+    color: #1de9b6;
+    font-size: 3.5rem;
+    padding: 0px;
+    font-family: 'Pacifico', cursive;
+}
+
+.hovereffect p {
+    color: #e0f2f1;
+    margin-top: -20px;
+    font-family: 'Comfortaa', cursive;
+}
+
 .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
     -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-bottom: 50px;
 }
 
 .top {
