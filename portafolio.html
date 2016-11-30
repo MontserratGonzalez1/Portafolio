@@ -3,95 +3,210 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portafolio</title>
-	<link rel="stylesheet" type="text/css" href="css/porta-css.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/portafolio.css">
+	<link rel="stylesheet" type="text/css" href="css/efectos.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-<header>
-	<ul id="nav">
-	<li><a href="#">Mis proyectos</a></li>
-	<li><a href="#">Algo que me gusta</a></li>
-	<li><a href="#">Mi CV</a></li>
-	<li><a href="#">Contactame</a></li>
-</ul>
-
-</header>
-	<div class="fondo-blanco">
-		<div class="row mar-top10">
-			<div class="col-lg-12">
-				 
-				<p class="titulares" id="tit-proyecto">Mis Proyectos</p>
-				<p class="subti te-center" id="tit-proyecto"> PORTAFOLIO</p>
+	<header>
+		<!-- este es botón que será el menú-->
+		<div class="fixed-action-btn">
+			<a class="btn_menu btn-floating btn-large #ff4081 pink accent-2">
+			    <i class="large material-icons">add</i>
+			</a>
+			<ul> 
+			    <li><a href="index.html" class=" btn-floating red"><i class="material-icons">&#xE88A;</i></a></li>
+			    <li><a href="#misproyectos" class="btn-floating pink"><i class="material-icons">work</i></a></li>
+			    <li><a href="#gustos" class="btn-floating #6a1b9a purple darken-3" ><i class="material-icons">face</i></a></li>
+			    <li><a href="#cv" class="btn-floating blue" ><i class="material-icons">assessment</i></a></li>
+			    <li><a  href="#contacto" class="btn-floating #ea80fc purple accent-1"><i class="material-icons">contact_mail</i></a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="fondo-blanco"> <!-- este es el div de transparencia que encerrará a todos los contenidos -->
+		<div class="row"> <!-- empieza titulo de sección -->
+			<div class="col s12 m12 l12">
+				<p class="titulares center">Mis Proyectos</p>
+				<p class="subti center"> PORTAFOLIO</p>
 			</div>
 		</div>
-		<section>
-			<div class="row mar-top50">
-				<div class="col-lg-6">
-					<div class="no-repeat hover tamaño-proyectos" id="comunidad">
-						
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="no-repeat hover tamaño-proyectos" id="kane">
-						
-					</div>	
-				</div>
-				<div class="col-lg-3">
-					<div class="no-repeat hover tamaño-proyectos" id="sprint">
-						
-					</div>	
-				</div>
-			</div>
+		<section id="misproyectos"> <!-- este es carrusel de los proyectos-->
+			<div class="col s12 m12 l12">
+				<div class="slid">
+					<ul>
+						<div class="hovereffect"> <!--proyecto comunidad sostenible-->
+							<li>
+							<img src="proyectos/comunidad.jpg">
+								<div class="overlay">
+									<h1 class="top">
+										<a href="proyectos-pro/18_Comunidad Sostenible/index.html" target="blank">Entrar al sitio</a>
+									</h1> 
+            					</div>
+							</li>
+						</div>
+						<div class="hovereffect"> <!--proyecto kane -->
+							<li>
+							<img src="proyectos/kane.jpg">
+								<div class="overlay">
+									<h1 class="top">
+										<a href="proyectos-pro/kane/index.html" target="blank">Entrar al sitio</a>
+									</h1> 
+            					</div>
+							</li>
+						</div>
+						<div class="hovereffect"> <!--proyecto spring-->
+							<li>
+							<img src="proyectos/spring.jpg">
+								<div class="overlay">
+									<h1 class="top">
+										<a href="proyectos-pro/26_Sprint/index.html" target="blank">Entrar al sitio</a>
+									</h1> 
+            					</div>
+							</li>
+						</div>
+						<div class="hovereffect"> <!--proyecto whats-->
+							<li>
+							<img src="proyectos/whats.jpg">
+								<div class="overlay">
+									<h1 class="top">
+										<a href="https://montserratgonzalez1.github.io/46_Whatsapp/" target="blank">Entrar al sitio</a>
+									</h1> 
+            					</div>
+							</li>
+						</div>
+					</ul>
+  				</div>
+      		</div>
 		</section>
-		<div class="row mar-top100">
-			<div class="col-lg-12"> 
-				<p class="titulares" id="tit-algo">Algo de</p>
-				<p class="subti te-center" id="tit-proyecto"> LO QUE ME GUSTA</p>
+		<div class="row"> <!-- estos son los titulares de la segunda sección-->
+			<div class="col s12 m12 l12"> 
+				<p class="titulares center">Algo de</p>
+				<p class="subti center"> LO QUE ME GUSTA</p>
 			</div>
-		</div>}
-		<section>
-			<div class="row mar-top50">
-				<div class="col-lg-3">
-					<div class="no-repeat tamaño-gustos hover" id="conciertos">
-						
-					</div>
+		</div>
+		<section id="gustos"> <!-- aquí van las fotos de lo que me gusta -->
+			<div class="row">
+				<div class="col s4 m4">
+					<div class="dtl25">
+						<img src="gustos/foto.jpg" class="imgg responsive-img" >
+						<div class="dtl">
+           					<h2 class="h2">Fotografía</h2>
+           					<p class="p">Capturar los mejores momentos</p>
+        				</div>
+					</div>		
 				</div>
-				<div class="col-lg-3">
-					<div class="no-repeat tamaño-gustos hover" id="conocer">
-						
-					</div>
-				</div><div class="col-lg-3">
-					<div class="no-repeat tamaño-gustos hover" id="foto">
-						
-					</div>
-				</div><div class="col-lg-3">
-					<div class="no-repeat tamaño-gustos hover" id="surf">
-						
-					</div>
+				<div class="col s4 m4">
+					<div class="dtl25">
+					 	<img src="gustos/dis.jpg" class="imgg responsive-img" >
+						<div class="dtl">
+           					<h2 class="h2">Diseño</h2>
+           					<p class="p">Diseño gráfico, de interiores y web</p>
+        				</div>
+					 </div>
+				</div>
+				<div class="col s4 m4">
+					<div class="dtl25">
+						<img src="gustos/espacios.jpg" class="imgg responsive-img">
+						<div class="dtl">
+           					<h2 class="h2">Cultura</h2>
+           					<p class="p">Asistir a espacios culturales</p>
+        				</div>
+					</div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s4 m4">
+					<div class="dtl25">
+						<img src="gustos/conocer.jpg" class="imgg responsive-img">
+						<div class="dtl">
+           					<h2 class="h2">Viajar</h2>
+           					<p class="p">Conocer diferentes lugares <br>de nuestro país</p>
+        				</div>
+					</div>	
+				</div>
+				<div class="col s4 m4">
+					<div class="dtl25">
+						<img src="gustos/ilus.jpg" class="imgg responsive-img">
+						<div class="dtl">
+           					<h2 class="h2">Ilustración</h2>
+           					<p class="p">Mezclar los diferentes tipos y <br> técnicas de ilustración</p>
+        				</div>
+        			</div>
+				</div>	
+				<div class="col s4 m4">
+					<div class="dtl25">
+						<img src="gustos/conciertos.jpg" class="imgg responsive-img">
+						<div class="dtl">
+           					<h2 class="h2">Conciertos</h2>
+           					<p class="p">Asistir a conciertos en vivo</p>
+        				</div>
+        			</div>
 				</div>
 			</div>
 		</section>
 		<div class="row">
-			<div class="col-lg-12"> 
-					<p class="titulares mar-top100" id="tit-CV">Descarga mi CV</p>
-					<a href="CV.pdf" target="blank"><img src="cv.jpg" id="tit-algo" class="mar-top100 cv"></a>
+			<div class="col s12 m12"> 
+				<p class="titulares center mar-top100" >Descarga mi CV</p>
+			</div>
+			<section id="cv">
+				<div class="row">
+					<div class="col s12 m12">
+						<ul class="demo-2 effect">
+							<li>
+								<h2 class="zero center">Descarga <br> Aquí</h2>
+							</li>
+							<li>
+								<a href="CV.pdf" target="blank"> <img src="cv.jpg" class="cv topp"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>	 <!-- aquí empieza el cv -->
+		</div>
+		<div class="row"> <!--aquí van los titulares de contacto-->
+			<div class="col s12"> 
+					<p class="titulares center mar-top100">Trabaja conmigo</p>
+					<p class="subti center"> CONTACTAME</p>
 			</div>
 		</div>
-		<section>
+		<section id="contacto"> <!-- esta seccion es del contacto, no se han linkeado bien el face ni correo-->
 			<div class="row">
-				<div class="col-lg-12"> 
-						<p class="titulares mar-top100" id="tit-proyecto">Trabaja conmigo</p>
-						<p class="subti te-center" id="tit-proyecto"> CONTACTAME</p>
+				<div class="col s3 m3">
+					<a href="https://github.com/MontserratGonzalez1" target="blank"><img src="img-porta/iconos/github.png" class="icon animated infinite pulse"></a>
 				</div>
-			</div>
+				<div class="col s2 m2">
+					<a href="x"><img src="img-porta/iconos/gmail.png" class="icon3 animated infinite pulse"></a>
+				</div>
+				<div class="col s2 m2">
+					<a href="https://www.linkedin.com/" target="blank"><img src="img-porta/iconos/linkedin.png" class="icon3 animated infinite pulse"></a>
+				</div>
+				<div class="col s2 m2">
+					<a href="https://es.pinterest.com/monkygs/" target="blank"><img src="img-porta/iconos/pinterest.png" class="icon3 animated infinite pulse"></a>
+				</div>
+				<div class="col s3 m3">
+					<a href="https://www.facebook.com/monkykags" target="blank"><img src="img-porta/iconos/facebook.png" class="icon2 animated infinite pulse"></a>
+				</div>
+			</div>	
 		</section>
 	</div> <!--ESTE ES EL FONDO BLANCO TRANSPARNTE-->
+	<footer>
+		<div class="container">
+		<p>Diseño: Montserrat González <br>
+		Laboratoria México</p>
+		</div>
+	</footer>
+	
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>

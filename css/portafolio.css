@@ -1,0 +1,187 @@
+body {
+	background: url("../img-porta/pluma.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*ESTA ES LA TRANSPARENCIA*/
+.fondo-blanco {
+	background-color: rgba(255,255,255,0.4);
+	width: 90%;
+	margin-left: 60px;
+	margin-top: 60px;
+	margin-right: 0px;
+
+}
+
+/* cambie la posicion del botón menu porque se encuentra abajo y yo
+lo quise arriba */
+.btn_menu {
+	position: relative;
+	margin-top: -1100px;
+}
+
+/*cambie la posición de los botones internos */
+.btn-floating {
+	margin-bottom: 40px !important;
+	z-index: 1;
+	line-height: 30px !important;
+}
+
+
+/* estos son los titulos que van al inicio de cada sección */
+.titulares {
+	font-family: 'Pacifico', cursive;
+	font-size: 6rem;
+	color: #00695c;
+	margin-top: 50px;
+}
+ /* estos los subtitulos */
+.subti {
+	font-size: 3rem;
+	font-family: 'Righteous', cursive;
+	color: rgb(111, 100, 114);
+	margin-top: -70px;
+}
+
+
+/*este será el carrusel, no funciona mi jquery o materialize por eso lo hice en css*/
+.slid {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slid ul {
+	padding: 0;
+	display: flex;
+	width: 400%;
+	animation: cambio 20s infinite alternate;
+	animation-timing-function: ease-in-out;
+}
+
+.slid li {
+	list-style: none;
+	width: 100%;
+}
+
+.slid img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% { margin-left: 0;}
+	20% { margin-left: 0;}
+	
+	25% { margin-left: -100%;}
+	45% { margin-left: -100%;}
+
+	50% { margin-left: -200%;}
+	70% { margin-left: -200%;}
+
+	75% { margin-left: -300%;}
+	100% { margin-left: -300%;}
+}
+ 	/* aqui termina carrusel */
+
+
+ /* tamaño del CV y hover, el otro efecto está en el css EFECTOS*/
+.cv {
+	width: 300px;
+	height: 400px;
+}
+
+.cv:hover
+{
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity:0.5;
+}
+
+.mar-top100 {
+	margin-top: 100px;
+}
+
+.icon{
+	margin-left: 90px;
+	margin-bottom: 60px;
+}
+
+.icon2 {
+	margin-right: 40px;
+	margin-bottom: 60px;
+}
+
+footer {
+	background-color: rgb(111, 100, 114);
+	padding: 40px 30px;
+	margin-top: -30px;
+	color: #1de9b6;
+	font-size: 1.1rem;
+	font-family: 'Righteous', cursive;
+	text-align: right;
+}
+
+
+			/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col l12"] {
+        width: 100%;
+    }
+	
+	body {
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .titulares {
+    	font-size: 3.2rem;
+    	margin-bottom: 0px;
+    }
+	
+	.fondo-blanco {
+		width: 90%;
+		margin-left: 30px;
+		margin-right: 0px;
+	}
+
+	.subti {
+		font-size: 1.5rem;
+		margin-top: 10px;
+	}
+	
+	.dtl25 {
+		height: 100%;
+		width: 100%;
+	}
+
+	.dtl25 .dtl {
+		height: 100%;
+	}
+	
+	.h2 {
+		font-size: 2rem;
+	}
+
+	.demo-2 {
+		display: none;
+	}
+
+	.icon, .icon2, .icon3{
+		position: relative;
+		margin-left: 0px;
+		height: 90px;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+}
