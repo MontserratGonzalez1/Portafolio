@@ -14,6 +14,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
 	
 </head>
 <body>
@@ -127,9 +130,6 @@
           					<h5 class="light grey-text text-lighten-3">Conocer más </a> </h5>
 						</div>
 					</li>
-
-
-
 		</section>
 		<div class="row" id="gustos"> <!-- estos son los titulares de la segunda sección-->
 			<div class="col s12 m12 l12"> 
@@ -140,22 +140,67 @@
 		<section > <!-- aquí van las fotos de lo que me gusta -->
 			<div class="row">
 				<div class="col s4 m4">
-					<div class="dtl25">
-						<img src="gustos/foto.jpg" class="imgg responsive-img" >
-						<div class="dtl">
-           					<h2 class="h2">Fotografía</h2>
+		<!--			<a href="gustos/foto.jpg" class="waves-effect waves-light">
+					
+					</a>
+					<div id="modal1" class="modal">
+    					<div class="modal-content">	
+    						<img src="gustos/foto.jpg" class=" responsive-img bottom-sheet" id="modal1">
+    						<h4>Modal Header</h4>
+      						<p>A bunch of text</p>
+						</div>
+					</div>	
+				</div>	-->
+		
+	<a class="modal-trigger waves-effect waves-light" href="#modal1" id="foto">	
+		<h2>Fotografía</h2>
+	</a>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+    <img src="gustos/foto.jpg" class=" responsive-img bottom-sheet" id="modal1">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+  
+
+
+
+
+					<div class="dtl">
+           		<!--			<h2 class="h2">Fotografía</h2>
            					<p class="p">Capturar los mejores momentos</p>
-        				</div>
+        				</div> -->
 					</div>		
 				</div>
 				<div class="col s4 m4">
+
+<a class="modal-trigger waves-effect waves-light btn" href="#modal2">Modal</a>
+<div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+    <img src="gustos/dis.jpg" class="imgg responsive-img" >
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
+				<!--
 					<div class="dtl25">
 					 	<img src="gustos/dis.jpg" class="imgg responsive-img" >
 						<div class="dtl">
            					<h2 class="h2">Diseño</h2>
            					<p class="p">Diseño gráfico, de interiores y web</p>
         				</div>
-					 </div>
+					 </div> -->
 				</div>
 				<div class="col s4 m4">
 					<div class="dtl25">
