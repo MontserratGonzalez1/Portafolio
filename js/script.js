@@ -5,3 +5,8 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+
+$(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });

@@ -27,9 +27,9 @@ lo quise arriba */
 
 /*cambie la posición de los botones internos */
 .btn-floating {
-	margin-bottom: 40px !important;
+	margin-bottom: 42px !important;
 	z-index: 1;
-	line-height: 30px !important;
+	line-height: 10px !important;
 }
 
 
@@ -49,7 +49,8 @@ lo quise arriba */
 }
 
 
-/*este será el carrusel, no funciona mi jquery o materialize por eso lo hice en css*/
+/*este será el carrusel, con css, se había hecho primeo así poruqe no pude linkear bien
+el jquery, ahora que pude lo haré con materialize
 .slid {
 	width: 90%;
 	margin: auto;
@@ -88,6 +89,15 @@ lo quise arriba */
 }
  	/* aqui termina carrusel */
 
+/* la clase slider es de materialize, pero en esta le daré el 
+largo que quiero */
+
+.slider, .slides {
+width: 90% !important;
+position: relative;
+left: 5% !important;
+}
+
 
  /* tamaño del CV y hover, el otro efecto está en el css EFECTOS*/
 .cv {
@@ -107,6 +117,17 @@ lo quise arriba */
 	margin-top: 100px;
 }
 
+.icon {
+	margin-bottom: 45px;
+}
+
+.pad-icon {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+/*    se quitaron los espacios de los iconos de contacto, porque quité
+2 links de contacto no recomedables 
 .icon{
 	margin-left: 90px;
 	margin-bottom: 60px;
@@ -115,7 +136,7 @@ lo quise arriba */
 .icon2 {
 	margin-right: 40px;
 	margin-bottom: 60px;
-}
+}  */
 
 footer {
 	background-color: rgb(111, 100, 114);
@@ -174,11 +195,12 @@ footer {
 		display: none;
 	}
 
-	.icon, .icon2, .icon3{
+	/*.icon, .icon2 {
 		position: relative;
 		margin-left: 0px;
 		height: 90px;
-	}
+	} */  /* se quitaron estas clases que eran lo´s espacios de los 
+	iconos de contacto en media */
 
 	footer {
 		width: 100%;

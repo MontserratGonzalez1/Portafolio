@@ -14,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script type="text/javascript" src="js/script.js"></script>
+	
 </head>
 <body>
 	<header>
@@ -24,11 +24,11 @@
 			    <i class="large material-icons">add</i>
 			</a>
 			<ul> 
-			    <li><a href="index.html" class=" btn-floating red"><i class="material-icons">&#xE88A;</i></a></li>
-			    <li><a href="#misproyectos" class="btn-floating pink"><i class="material-icons">work</i></a></li>
-			    <li><a href="#gustos" class="btn-floating #6a1b9a purple darken-3" ><i class="material-icons">face</i></a></li>
-			    <li><a href="#cv" class="btn-floating blue" ><i class="material-icons">assessment</i></a></li>
-			    <li><a  href="#contacto" class="btn-floating #ea80fc purple accent-1"><i class="material-icons">contact_mail</i></a></li>
+			    <li><a href="index.html" class="tooltipped btn-floating red" data-position="left" data-delay="70" data-tooltip="Home"><i class="material-icons">&#xE88A;</i></a></li>
+			    <li><a href="#misproyectos" class="tooltipped btn-floating pink" data-position="left" data-delay="70" data-tooltip="Proyectos"><i class="material-icons">work</i></a></li>
+			    <li><a href="#gustos" class="tooltipped btn-floating #6a1b9a purple darken-3" data-position="left" data-delay="70" data-tooltip="Yo"><i class="material-icons">face</i></a></li>
+			    <li><a href="#cv" class="tooltipped btn-floating blue" data-position="left" data-delay="70" data-tooltip="Descarga mi CV"><i class="material-icons">assessment</i></a></li>
+			    <li><a  href="#contacto" class="tooltipped btn-floating #ea80fc purple accent-1" data-position="left" data-delay="70" data-tooltip="Contactáme"><i class="material-icons">contact_mail</i></a></li>
 			</ul>
 		</div>
 	</header>
@@ -39,11 +39,11 @@
 				<p class="subti center"> PORTAFOLIO</p>
 			</div>
 		</div>
-		<section id="misproyectos"> <!-- este es carrusel de los proyectos-->
-			<div class="col s12 m12 l12">
+		<section id="misproyectos"> <!-- este es SLIDE de los proyectos-->
+	<!--		<div class="col s12 m12 l12">
 				<div class="slid">
 					<ul>
-						<div class="hovereffect"> <!--proyecto comunidad sostenible-->
+						<div class="hovereffect">  ... proyecto comunidad sostenible ..
 							<li>
 							<img src="proyectos/comunidad.jpg">
 								<div class="overlay">
@@ -54,7 +54,7 @@
             					</div>
 							</li>
 						</div>
-						<div class="hovereffect"> <!--proyecto kane -->
+						<div class="hovereffect"> ..proyecto kane ..
 							<li>
 							<img src="proyectos/kane.jpg">
 								<div class="overlay">
@@ -65,7 +65,7 @@
             					</div>
 							</li>
 						</div>
-						<div class="hovereffect"> <!--proyecto spring-->
+						<div class="hovereffect"> ..proyecto spring..
 							<li>
 							<img src="proyectos/spring.JPG">
 								<div class="overlay">
@@ -76,12 +76,12 @@
             					</div>
 							</li>
 						</div>
-						<div class="hovereffect"> <!--proyecto whats-->
+						<div class="hovereffect"> ..proyecto whats..
 							<li>
 							<img src="proyectos/whats.JPG">
 								<div class="overlay">
 									<h1 class="top">
-										<a href="https://montserratgonzalez1.github.io/46_Whatsapp/" target="blank">Whatsapp <br>(versión Desktop)</a>
+										<a href="https://montserratgonzalez1.github.io/46_Whatsapp/" target="blank"> Whatsapp <br>(versión Desktop)</a>
 										<p>Conocer más</p>
 									</h1> 
             					</div>
@@ -89,15 +89,55 @@
 						</div>
 					</ul>
   				</div>
-      		</div>
+      			</div>		-->
+      		 <div class="slider">
+    			<ul class="slides">
+      				<li>
+      					<img src="proyectos/comunidad.jpg" class="responsive-img">
+      					<div class="caption center-align">
+      						<a href="https://montserratgonzalez1.github.io/18_Comunidad-Sostenible/" target="blank">
+      							<h3>Comunidad Sostenible</h3>
+          						<h5 class="light grey-text text-lighten-3">Conocer más </h5>
+          					</a> 
+						</div>
+					</li>
+					<li>
+						<img src="proyectos/kane.jpg" class="responsive-img">
+						<div class="caption center-align">
+      						<a href="https://montserratgonzalez1.github.io/kane/" target="blank">
+      							<h3>Kane Theme <br>(Paleta de colores)</h3>
+								<h5 class="light grey-text text-lighten-3">Conocer más </h5>
+							</a> 
+						</div>
+					</li>	
+					<li>
+						<img src="proyectos/spring.JPG" class="responsive-img">
+						<div class="caption center-align">
+      						<a href="https://montserratgonzalez1.github.io/26_Sprint/" target="blank">
+      							<h3>Flatness Spring Came</h3>
+          						<h5 class="light grey-text text-lighten-3">Conocer más  </h5>
+          					</a>
+						</div>
+					</li>
+					<li>
+						<img src="proyectos/whats.JPG" class="responsive-img">
+						<div class="caption center-align">
+      					<a href="https://montserratgonzalez1.github.io/46_Whatsapp/" target="blank">
+      						<h3>Whatsapp Web </h3>
+          					<h5 class="light grey-text text-lighten-3">Conocer más </a> </h5>
+						</div>
+					</li>
+
+
+
 		</section>
-		<div class="row"> <!-- estos son los titulares de la segunda sección-->
+		<div class="row" id="gustos"> <!-- estos son los titulares de la segunda sección-->
 			<div class="col s12 m12 l12"> 
 				<p class="titulares center">Algo de</p>
 				<p class="subti center"> LO QUE ME GUSTA</p>
 			</div>
 		</div>
-		<section id="gustos"> <!-- aquí van las fotos de lo que me gusta -->
+		<section > <!-- aquí van las fotos de lo que me gusta -->
 			<div class="row">
 				<div class="col s4 m4">
 					<div class="dtl25">
@@ -157,11 +197,11 @@
 				</div>
 			</div>
 		</section>
-		<div class="row">
+		<div class="row" id="cv">
 			<div class="col s12 m12"> 
 				<p class="titulares center mar-top100" >Descarga mi CV</p>
 			</div>
-			<section id="cv">
+			<section >
 				<div class="row">
 					<div class="col s12 m12">
 						<ul class="demo-2 effect">
@@ -177,29 +217,29 @@
 				</div>
 			</section>	 <!-- aquí empieza el cv -->
 		</div>
-		<div class="row"> <!--aquí van los titulares de contacto-->
+		<div class="row"  id="contacto"> <!--aquí van los titulares de contacto-->
 			<div class="col s12"> 
 					<p class="titulares center mar-top100">Trabaja conmigo</p>
 					<p class="subti center"> CONTACTAME</p>
 			</div>
 		</div>
-		<section id="contacto"> <!-- esta seccion es del contacto, no se han linkeado bien el face ni correo-->
-			<div class="row">
-				<div class="col s3 m3">
-					<a href="https://github.com/MontserratGonzalez1" target="blank"><img src="img-porta/iconos/github.png" class="icon animated infinite pulse"></a>
+		<section> <!-- esta seccion es del contacto, no se han linkeado bien el face ni correo-->
+			<div class="row pad-icon">
+				<div class="col s4 center">
+					<a href="https://github.com/MontserratGonzalez1" target="blank"><img src="img-porta/iconos/github.png" class="icon responsive-img animated infinite pulse"></a>
 				</div>
-				<div class="col s2 m2">
-					<a href="x"><img src="img-porta/iconos/gmail.png" class="icon3 animated infinite pulse"></a>
+				<div class="col s4 center">
+					<a href="mailto:monkygs@gmail.com"><img src="img-porta/iconos/gmail.png" class="tooltipped icon responsive-img animated infinite pulse" data-position="top" data-delay="70" data-tooltip="monkygs@gmail.com"></a>
 				</div>
-				<div class="col s2 m2">
-					<a href="https://www.linkedin.com/" target="blank"><img src="img-porta/iconos/linkedin.png" class="icon3 animated infinite pulse"></a>
+				<div class="col s4 center">
+					<a href="https://www.linkedin.com/in/montse-gs-685820125" target="blank"><img src="img-porta/iconos/linkedin.png" class="icon responsive-img animated infinite pulse"></a>
 				</div>
-				<div class="col s2 m2">
+		<!--		<div class="col s2 m2">
 					<a href="https://es.pinterest.com/monkygs/" target="blank"><img src="img-porta/iconos/pinterest.png" class="icon3 animated infinite pulse"></a>
 				</div>
 				<div class="col s3 m3">
 					<a href="https://www.facebook.com/monkykags" target="blank"><img src="img-porta/iconos/facebook.png" class="icon2 animated infinite pulse"></a>
-				</div>
+				</div> -->  <!-- Por recomenación se quitaron estos links -->
 			</div>	
 		</section>
 	</div> <!--ESTE ES EL FONDO BLANCO TRANSPARNTE-->
@@ -213,5 +253,6 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
