@@ -164,31 +164,63 @@
 
     /* hasta aquí termina el hover de fotos */
 
-#foto {
-  background-image: url("../gustos/foto.jpg");
-  height: 340px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+      /* efectos de los circulos de gustos */
+.foto-size {
+  height: 190px;
+  width: 50%;
   border-radius: 100%;
+  opacity: 1;
+  border: 6px rgb(111, 100, 114) solid;
 }
 
-#foto:hover {
-  color: red;
-  background: red;
-  opacity: 0.1;
+.foto-size:hover { 
+  background: #00695c;
+  opacity: 1;
+  border: 6px #00695c solid;
 }
-
-h2 {
-    font-family: 'Pacifico', cursive;
-    color: #1de9b6;
+        /* icono zoom */
+.zoom {
+    color: #e0f2f1;
     position: absolute;
-    top: 60px;
-    left: 70px;
+    top: 40px;
+    left: 40px;
 }
 
+.zoom:hover {
+  color: #00695c;
+}
 
+#flores {
+  background-image: url("../gustos/foto.jpg");
+  background-size: cover;
+}
 
+#dis{
+  background-image: url("../gustos/dis.jpg");
+  background-size: cover;
+}
+
+#espacios {
+  background-image: url("../gustos/espacios.jpg"); 
+  background-size: cover;
+}
+
+#conocer {
+  background-image: url("../gustos/conocer.JPG"); 
+  background-size: cover;
+}
+
+#ilus {
+  background-image: url("../gustos/ilus.jpg");
+  background-size: cover;
+}
+
+#conciertos {
+  background-image: url("../gustos/conciertos.jpg");
+  background-size: cover;
+}
+
+    /* aqui termina */
 
 
     /* efecto hover del CV */

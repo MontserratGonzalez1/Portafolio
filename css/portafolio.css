@@ -99,6 +99,21 @@ position: relative;
 left: 5% !important;
 }
 
+.modal-content {
+	max-height: 70% !important;
+}
+ 
+/* esta clase es de materializae para esconder la clase zoom del icono */
+.small {
+	opacity: all !important;
+}
+
+	
+h4 {
+	font-family: 'Pacifico', cursive;
+	color: #1de9b6;
+}
+
 
  /* tamaño del CV y hover, el otro efecto está en el css EFECTOS*/
 .cv {
@@ -194,6 +209,24 @@ footer {
 
 	.demo-2 {
 		display: none;
+	}	
+
+
+	/* esta clase es de materialize y la use para el zoom de las fotos 
+	.small {
+		object-position: center;
+	} */	
+
+	.zoom{
+		margin-top: -15px;
+		margin-left: -35px;
+		position: fixed;
+		z-index: 2;
+	}
+
+	.foto-size {
+		height: 120px !important;
+		width: 90% !important;
 	}
 
 	/*.icon, .icon2 {
