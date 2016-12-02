@@ -22,14 +22,17 @@ body {
 lo quise arriba */
 .btn_menu {
 	position: relative;
-	margin-top: -1100px;
+	margin-top: -1060px;
+	margin-bottom: 0px;
 }
 
 /*cambie la posición de los botones internos */
 .btn-floating {
-	margin-bottom: 42px !important;
+	margin-bottom: 37px !important;
 	z-index: 1;
-	line-height: 10px !important;
+	position: absolute;
+	right: 70px !important;
+	top: 0px !important;	
 }
 
 
@@ -115,19 +118,30 @@ h4 {
 }
 
 
- /* tamaño del CV y hover, el otro efecto está en el css EFECTOS*/
-.cv {
+ /* tamaño del CV y hover, el otro efecto lo quité porque no me servía 
+ para hacer responsive*/
+#cv {
+	background-image: url("../curri.JPG");
 	width: 300px;
 	height: 400px;
+	background-size: cover;
+	opacity: 0.7;
+	padding-top: 12%;
+	padding-left: 120px;
+	
 }
 
-.cv:hover
+#cv:hover
 {
-	-webkit-transform: scale(0.8);
-	-ms-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity:0.5;
+	transform: scale(0.6);
+	-webkit-transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	opacity:0.4;
+	background: rgb(111, 100, 114);
+	color: #fff;
+	opacity: .8;
 }
+
 
 .mar-top100 {
 	margin-top: 100px;
@@ -137,6 +151,7 @@ h4 {
 	margin-bottom: 45px;
 }
 
+/* clase para juntar los iconos de contacto y que no queden muy separados */
 .pad-icon {
 	padding-left: 90px;
 	padding-right: 90px;
@@ -177,6 +192,20 @@ footer {
       max-width: 100%;
       height: 100%;
     }
+
+	.btn_menu {
+		position: relative;
+		right: 90px !important;
+	}
+
+	.btn-floating-menu {
+		margin-bottom: 37px !important;
+		position: absolute;
+		left: -20px !important;
+		top: 0px !important;
+		bottom: -0px !important;
+
+	}
 
     .titulares {
     	font-size: 3.2rem;
@@ -228,6 +257,12 @@ footer {
 		height: 120px !important;
 		width: 90% !important;
 	}
+
+	#cv {
+		max-width: 100%;
+      	height: 100%;
+	}
+
 
 	/*.icon, .icon2 {
 		position: relative;

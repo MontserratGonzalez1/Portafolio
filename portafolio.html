@@ -22,27 +22,47 @@
 <body>
 	<header>
 		<!-- este es botón que será el menú-->
-		<div class="fixed-action-btn">
+		<div class="fixed-action-btn click-to-toggle">
 			<a class="btn_menu btn-floating btn-large #ff4081 pink accent-2">
-			    <i class="large material-icons">add</i>
+			    <i class="large material-icons">menu</i>
 			</a>
 			<ul> 
-			    <li><a href="index.html" class="tooltipped btn-floating red" data-position="left" data-delay="70" data-tooltip="Home"><i class="material-icons">&#xE88A;</i></a></li>
-			    <li><a href="#misproyectos" class="tooltipped btn-floating pink" data-position="left" data-delay="70" data-tooltip="Proyectos"><i class="material-icons">work</i></a></li>
-			    <li><a href="#gustos" class="tooltipped btn-floating #6a1b9a purple darken-3" data-position="left" data-delay="70" data-tooltip="Yo"><i class="material-icons">face</i></a></li>
-			    <li><a href="#cv" class="tooltipped btn-floating blue" data-position="left" data-delay="70" data-tooltip="Descarga mi CV"><i class="material-icons">assessment</i></a></li>
-			    <li><a  href="#contacto" class="tooltipped btn-floating #ea80fc purple accent-1" data-position="left" data-delay="70" data-tooltip="Contactáme"><i class="material-icons">contact_mail</i></a></li>
+			    <li>
+			    	<a href="index.html" class="tooltipped btn-floating btn-floating-menu red" data-position="left" data-delay="70" data-tooltip="Home">
+			    	<i class="material-icons">&#xE88A;</i>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a href="#misproyectos" class="tooltipped btn-floating btn-floating-menu pink" data-position="left" data-delay="70" data-tooltip="Proyectos">
+			    	<i class="material-icons">work</i>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a href="#gustos" class="tooltipped btn-floating btn-floating-menu #6a1b9a purple darken-3" data-position="left" data-delay="70" data-tooltip="Yo">
+			    	<i class="material-icons">face</i>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a href="#curri" class="tooltipped btn-floating btn-floating-menu blue" data-position="left" data-delay="70" data-tooltip="Descarga mi CV">
+			    	<i class="material-icons">assessment</i>
+			    	</a>
+			    </li>
+			    <li>
+			    	<a  href="#contacto" class="tooltipped btn-floating btn-floating-menu #ea80fc purple accent-1" data-position="left" data-delay="70" data-tooltip="Contactáme">
+			    	<i class="material-icons">contact_mail</i>
+			    	</a>
+			    </li>
 			</ul>
 		</div>
 	</header>
 	<div class="fondo-blanco"> <!-- este es el div de transparencia que encerrará a todos los contenidos -->
-		<div class="row"> <!-- empieza titulo de sección -->
+		<div class="row" id="misproyectos"> <!-- empieza titulo de sección -->
 			<div class="col s12 m12 l12">
 				<p class="titulares center">Mis Proyectos</p>
 				<p class="subti center"> PORTAFOLIO</p>
 			</div>
 		</div>
-		<section id="misproyectos"> <!-- este es SLIDE de los proyectos-->
+		<section > <!-- este es SLIDE de los proyectos-->
 	<!--		<div class="col s12 m12 l12">
 				<div class="slid">
 					<ul>
@@ -235,25 +255,24 @@
 				</div>
 			</div>
 		</section>
-		<div class="row" id="cv">
+		<div class="row" id="curri">
 			<div class="col s12 m12"> 
 				<p class="titulares center mar-top100" >Descarga mi CV</p>
 			</div>
-			<section >
+			<section>
 				<div class="row">
-					<div class="col s12 m12">
-						<ul class="demo-2 effect">
-							<li>
-								<h2 class="zero center">Descarga <br> Aquí</h2>
-							</li>
-							<li>
-								<a href="CV.pdf" target="blank"> <img src="curri.JPG" class="cv topp"></a>
+					<div class="col s12 m12 center">
+						<div id="cv" class="waves-effect waves-green">
+							<a href="CV.pdf" target="blank">
+								<a href="CV.pdf" target="blank" class="btn_rosa btn-floating btn-large waves-effect waves-light #00695c animated infinite pulse">
+								<i class="material-icons">file_download</i>
+								</a>
+							</a>
+						</div>
 								<!-- el nombre del cv debe estar en minusculas -->
-							</li>
-						</ul>
 					</div>
 				</div>
-			</section>	 <!-- aquí empieza el cv -->
+			</section>	 <!-- aquí termina el cv -->
 		</div>
 		<div class="row"  id="contacto"> <!--aquí van los titulares de contacto-->
 			<div class="col s12"> 
@@ -261,7 +280,7 @@
 					<p class="subti center"> CONTACTAME</p>
 			</div>
 		</div>
-		<section> <!-- esta seccion es del contacto, no se han linkeado bien el face ni correo-->
+		<section>
 			<div class="row pad-icon">
 				<div class="col s4 center">
 					<a href="https://github.com/MontserratGonzalez1" target="blank"><img src="img-porta/iconos/github.png" class="icon responsive-img animated infinite pulse"></a>
