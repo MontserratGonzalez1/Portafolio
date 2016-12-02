@@ -20,3 +20,7 @@ $(document).ready(function(){
        
  $('#modal1').modal('open');
  $('#modal1').modal('close');
+
+
+ /* menu */
+ $(".button-collapse").sideNav();

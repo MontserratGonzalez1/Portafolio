@@ -22,7 +22,7 @@
 <body>
 	<header>
 		<!-- este es botón que será el menú-->
-		<div class="fixed-action-btn click-to-toggle">
+		<!--<div class="fixed-action-btn click-to-toggle">
 			<a class="btn_menu btn-floating btn-large #ff4081 pink accent-2">
 			    <i class="large material-icons">menu</i>
 			</a>
@@ -53,7 +53,26 @@
 			    	</a>
 			    </li>
 			</ul>
-		</div>
+		</div>-->
+		<nav>
+    		<div class="nav-wrapper">
+      			<a href="index.html" class="brand-logo"><span>Montse !</span></a>
+      			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i>
+      			</a>
+      			<ul class="right hide-on-med-and-down ">
+        			<li><a href="#misproyectos">Portafolio</a></li>
+        			<li><a href="#gustos">Algo que...</a></li>
+        			<li><a href="#curri" >Descarga CV</a></li>
+        			<li><a href="#contacto">Contáctame</a></li>
+      			</ul>
+      			<ul class="side-nav" id="mobile-demo">
+        			<li><a href="#misproyectos">Portafolio</a></li>
+        			<li><a href="#gustos">Algo que...</a></li>
+        			<li><a href="#curri" >Descarga CV</a></li>
+        			<li><a href="#contacto">Contáctame</a></li>
+      			</ul>
+    		</div>
+  		</nav>
 	</header>
 	<div class="fondo-blanco"> <!-- este es el div de transparencia que encerrará a todos los contenidos -->
 		<div class="row" id="misproyectos"> <!-- empieza titulo de sección -->
@@ -128,8 +147,8 @@
 						<img src="proyectos/kane.jpg" class="responsive-img">
 						<div class="caption center-align">
       						<a href="https://montserratgonzalez1.github.io/kane/" target="blank">
-      							<h3>Kane Theme <br>(Paleta de colores)</h3>
-								<h5 class="light grey-text text-lighten-3">Conocer más </h5>
+      							<h3 id="morado">Kane Theme <br>(Paleta de colores)</h3>
+								<h5 class="light " id="morado">Conocer más </h5>
 							</a> 
 						</div>
 					</li>	
@@ -146,8 +165,9 @@
 						<img src="proyectos/whats.JPG" class="responsive-img">
 						<div class="caption center-align">
       					<a href="https://montserratgonzalez1.github.io/46_Whatsapp/" target="blank">
-      						<h3>Whatsapp Web </h3>
-          					<h5 class="light grey-text text-lighten-3">Conocer más </a> </h5>
+      						<h3 id="morado">Whatsapp Web </h3>
+          					<h5  id="morado">Conocer más </h5>
+          				</a> 
 						</div>
 					</li>
 		</section>

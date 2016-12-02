@@ -1,11 +1,54 @@
 body {
 	background: url("../img-porta/pluma.jpg");
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed;		
 	width: 100%;
 	height: 0px;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+
+/* CLASES DEL MENU */
+nav {
+	background: rgb(111, 100, 114) !important;
+	height: 80px !important;
+	padding-top: 10px;
+	position: fixed !important;
+	z-index: 1000;
+	margin-top: -60px !important;
+}
+
+nav ul {
+	margin-right: 70px !important;
+
+}
+
+ul li {
+	font-family: 'Righteous', cursive;
+}
+
+li a {
+	color: #1de9b6 !important;
+
+}
+
+span {
+  font-family: 'Pacifico', cursive;
+  color: #1de9b6;
+  margin-left: 60px;
+}
+
+.side-nav {
+	background-color: #1de9b6!important;
+	color: red!important;
+	z-index: 30 !important;
+	
+}
+
+.side-nav li a{
+	color: rgb(111, 100, 114) !important;
+	font-size: 1.5em;
 }
 
 /*ESTA ES LA TRANSPARENCIA*/
@@ -18,15 +61,17 @@ body {
 
 }
 
+/* SE QUITO EL MENU DE BOTON, PORQUE SEGUIA SIN VERSE EN RESPONSIVE
+
 /* cambie la posicion del botón menu porque se encuentra abajo y yo
-lo quise arriba */
+lo quise arriba 
 .btn_menu {
 	position: relative;
 	margin-top: -1060px;
 	margin-bottom: 0px;
 }
 
-/*cambie la posición de los botones internos */
+/*cambie la posición de los botones internos 
 .btn-floating {
 	margin-bottom: 37px !important;
 	z-index: 1;
@@ -35,6 +80,7 @@ lo quise arriba */
 	top: 0px !important;	
 }
 
+*/
 
 /* estos son los titulos que van al inicio de cada sección */
 .titulares {
@@ -97,26 +143,40 @@ el jquery, ahora que pude lo haré con materialize
 largo que quiero */
 
 .slider, .slides {
-width: 90% !important;
-position: relative;
-left: 5% !important;
+	width: 90% !important;
+	position: relative;
+	left: 5% !important;
+	background-color: 
+	opacity: .8 !important;	
 }
 
-.modal-content {
-	max-height: 70% !important;
+/* este es el tamaño de los titulos del slide */
+h3 , h4 {
+	font-family: 'Pacifico', cursive;
+	color: #1de9b6;
+	z-index: 100;
 }
- 
-/* esta clase es de materializae para esconder la clase zoom del icono */
+
+#morado {
+	color: rgb(111, 100, 114);
+}
+
+ /* esto es del modal */
+.modal-content {
+	height: 70% !important;
+}
+
+.modal-fixed-footer {
+	height: 60% !important;	
+	width: 33% !important;
+
+}
+
+
+/* esta clase es de materialize para esconder la clase zoom del icono */
 .small {
 	opacity: all !important;
 }
-
-	
-h4 {
-	font-family: 'Pacifico', cursive;
-	color: #1de9b6;
-}
-
 
  /* tamaño del CV y hover, el otro efecto lo quité porque no me servía 
  para hacer responsive*/
@@ -127,8 +187,7 @@ h4 {
 	background-size: cover;
 	opacity: 0.7;
 	padding-top: 12%;
-	padding-left: 120px;
-	
+	padding-left: 20px;	
 }
 
 #cv:hover
@@ -193,6 +252,7 @@ footer {
       height: 100%;
     }
 
+	/*
 	.btn_menu {
 		position: relative;
 		right: 90px !important;
@@ -205,7 +265,8 @@ footer {
 		top: 0px !important;
 		bottom: -0px !important;
 
-	}
+	}  */
+
 
     .titulares {
     	font-size: 3.2rem;
@@ -223,24 +284,12 @@ footer {
 		margin-top: 10px;
 	}
 	
-	.dtl25 {
-		height: 100%;
-		width: 100%;
-	}
-
-	.dtl25 .dtl {
-		height: 100%;
-	}
 	
 	.h2 {
 		font-size: 2rem;
 	}
 
-	.demo-2 {
-		display: none;
-	}	
-
-
+	
 	/* esta clase es de materialize y la use para el zoom de las fotos 
 	.small {
 		object-position: center;
