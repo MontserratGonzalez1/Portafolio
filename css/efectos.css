@@ -169,21 +169,22 @@
   height: 190px;
   width: 50%;
   border-radius: 100%;
-  opacity: 1;
+  opacity: .6;
   border: 6px rgb(111, 100, 114) solid;
+  ;
 }
 
 .foto-size:hover { 
-  background: #00695c;
   opacity: 1;
   border: 6px #00695c solid;
 }
         /* icono zoom */
 .zoom {
-    color: #e0f2f1;
+    color: #1de9b6;
     position: absolute;
     top: 40px;
     left: 40px;
+    z-index: 45;
 }
 
 .zoom:hover {
@@ -216,7 +217,7 @@
 }
 
 #conciertos {
-  background-image: url("../gustos/conciertos.jpg");
+  background-image: url("../gustos/concierto2.jpg");
   background-size: cover;
 }
 
